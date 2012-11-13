@@ -56,10 +56,14 @@ header h1 {
   100% { -webkit-transform: translateX(20.0000px) translateY(-0.0000px); }
 }
 
+#intro,
+#describe,
+#about,
+#who { margin-top: 80px; }
+
 #intro {
 	position: relative;
 	height: 470px;
-	margin-top: 80px;
 }
 #intro .cake-plate {
 	position: absolute;
@@ -67,25 +71,38 @@ header h1 {
 	left: 290px;
 	-webkit-animation: floating 10s infinite linear;
 }
-
-
-.question {
+#intro .question {
 	position: absolute;
 	text-shadow: 0px 0px 10px #fff;
 }
-.question.first {
+#intro .question.first {
 	top: 0; left: 0px;
 	width: 300px;
 }
-.question.second {
+#intro .question.second {
 	bottom: 0; right: 0px;
 	width: 300px;
 	text-align: right;
 }
 
-#describe { margin-top: 80px; }
-#about { margin-top: 80px; }
-#who { margin-top: 80px; }
+#offscreen-elements-wrap {
+	width: 100%;
+	overflow-x: hidden;
+}
+#about .omega {
+	position: relative;
+}
+
+#about .sled {
+	-webkit-transform: translateX(600px) translateY(-600px);
+	-webkit-transition: -webkit-transform 0.75s linear;
+}
+
+#about .sled.show {
+	-webkit-transform: translateX(0px) translateY(0px);
+}
+
+
 #who h2 { margin-top: 40px; }
 
 footer { margin-top: 80px; padding-bottom: 40px; }

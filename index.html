@@ -27,12 +27,12 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="oliver-head"></div>
-  	<header>
-  		<h1>A Sweet Story</h1>
-  	</header>
-  	<section>
+  <div id="offscreen-elements-wrap">
+    <div class="container">
+      <div class="oliver-head"></div>
+    	<header>
+    		<h1>A Sweet Story</h1>
+    	</header>
       <div id="intro">
         <div class="cake-plate">
         </div>
@@ -50,12 +50,13 @@
           <a class="app-store" href="#"></a>
         </div>
   		</div>
-      <div id="about" class="row">
+      <div id="about" class="row ready">
         <div class="columns ten alpha">
           <p>&ldquo;Childhood is a special time. The world is new and almost everything is completely amazing. <em>A Sweet Story</em> is my contribution to all the childhoods of today. It was inspired by my own kids who, like most children, know what they like and just want it all the time! Grown ups can be so serious. Kids know the truth: Life is better when it’s sweet.&rdquo;</p>
           <p style="text-align: right;">&mdash;<strong>Jono Howard, author</strong></p>
         </div>
-        <div class="columns six omega sled">
+        <div class="columns six omega">
+          <div class="sled"></div>
         </div>
       </div>
       <div id="who" class="row">
@@ -70,15 +71,17 @@
           <p><a href="http://www.krisandbrake.com">Kris &amp; Brake Technologies Inc</a> develop mobile applications and engaging educational software for the modern family. Originally founded in 2010 as a partnership between close friends Kristopher Goudie &amp; E Brake, K&amp;B technologies has expanded to a budding office with over 40 years combined experience creating interactive software for international clients. <em>A Sweet Story</em> is the exciting and innovative culmination of this expanding and family-oriented team.</p>
         </div>
       </div>
-  	</section>
-    <footer class="row">
-      <div class="columns three alpha offset-by-five">
-        <a class="app-store" href="#"></a>
-      </div>
-      <div class="columns four omega">
-        <div class="donut"></div>
-      </div>
-    </footer>
+      <footer class="row">
+        <div class="columns three alpha offset-by-five">
+          <a class="app-store" href="#"></a>
+        </div>
+        <div class="columns four omega">
+          <div class="donut"></div>
+        </div>
+      </footer>
+    </div>
   </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="/scripts.js"></script>
 </body>
 </html>
