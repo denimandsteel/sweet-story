@@ -1,0 +1,138 @@
+@font-face {
+	font-family: 'DidotDisplayDemi';
+	src: url('didot/24B620_0_0.eot');
+	src: url('didot/24B620_0_0.eot?#iefix') format('embedded-opentype'),
+	     url('didot/24B620_0_0.woff') format('woff'),
+	     url('didot/24B620_0_0.ttf') format('truetype');
+}
+
+body {
+	font-family: 'DidotDisplayDemi';
+	font-size: 22px;
+	line-height: 30px;
+	background: url(../images/clouds.jpg) fixed;
+}
+h1, h2, h3, h4, h5, h6 { font-family: 'DidotDisplayDemi'; }
+
+header h1 {
+	color: white;
+	text-shadow: 1px 1px 5px #000;
+	font-size: 130px;
+	line-height: 135px;
+	margin-top: 40px;
+	padding-top: 80px;
+}
+
+/** Retina images **/
+
+.cake-plate {
+	width: 378px;
+	height: 315px;
+	background: url(../images/cake-plate.png) top left no-repeat;
+	background-size: 378px 315px;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+	.cake-plate { background-image: url(../images/cake-plate@2x.png);	}
+}
+
+.oliver-head {
+	width: 268px;
+	height: 258px;
+	background: url(../images/oliver-head.png) top left no-repeat;
+	background-size: 268px 258px;
+
+	position: absolute;
+	top: 0; right: 0;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+	.cake-plate { background-image: url(../images/oliver-head@2x.png); }
+}
+
+.app-store {
+	display: block;
+	width: 160px;
+	height: 54px;
+	background: url(../images/app-store.png) top left no-repeat;
+	background-size: 160px 54px;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+	.app-store { background-image: url(../images/app-store@2x.png); }
+}
+
+.parents {
+	display: block;
+	width: 280px;
+	height: 292px;
+	background: url(../images/parents.png) top left no-repeat;
+	background-size: 280px 292px;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+	.parents { background-image: url(../images/parents@2x.png); }
+}
+
+.sled {
+	display: block;
+	width: 280px;
+	height: 269px;
+	background: url(../images/sled.png) top left no-repeat;
+	background-size: 280px 269px;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+	.sled { background-image: url(../images/sled@2x.png); }
+}
+
+.donut {
+	display: block;
+	width: 197px;
+	height: 216px;
+	background: url(../images/donut.png) top left no-repeat;
+	background-size: 197px 216px;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+	.donut { background-image: url(../images/donut@2x.png); }
+}
+
+/** Layout **/
+/*.row p {
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}*/
+
+#intro {
+	position: relative;
+	height: 378px;
+	margin-top: 80px;
+}
+#intro .cake-plate {
+	position: absolute;
+	top: 0;
+	left: 251px;
+}
+
+.question {
+	position: absolute;
+	text-shadow: 0px 0px 10px #fff;
+}
+.question.first {
+	top: 0; left: 0px;
+	width: 300px;
+}
+.question.second {
+	top: 200px; right: 0px;
+	width: 300px;
+}
+
+#describe { margin-top: 80px; }
+#about { margin-top: 80px; }
+#who { margin-top: 80px; }
+#who h2 { margin-top: 40px; }
+
+footer { margin-top: 80px; padding-bottom: 40px; }
+footer .app-store { margin-top: 10px; }
