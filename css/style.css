@@ -16,6 +16,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 { font-family: 'DidotDisplayDemi'; }
 
+header { position: relative; }
 header h1 {
 	color: #E46964;
 	text-shadow: 1px 1px 5px #fff;
@@ -23,6 +24,12 @@ header h1 {
 	line-height: 135px;
 	margin-top: 40px;
 	padding-top: 80px;
+}
+header h3 {
+	text-shadow: 1px 1px 5px #fff;
+	position: absolute;
+	bottom: -16px;
+	left: 180px;
 }
 
 /** Layout **/
