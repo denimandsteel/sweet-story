@@ -17,8 +17,8 @@ body {
 h1, h2, h3, h4, h5, h6 { font-family: 'DidotDisplayDemi'; }
 
 header h1 {
-	color: white;
-	text-shadow: 1px 1px 5px #000;
+	color: #E46964;
+	text-shadow: 1px 1px 5px #fff;
 	font-size: 130px;
 	line-height: 135px;
 	margin-top: 40px;
