@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
     $(window).on('touchmove', scrolling);
 
     var sledOffset = $(window).width() - 960 + 340 + 20;
-    $('#about .sled').css({'webkitTransform': 'translateX(' + sledOffset + 'px) translateY(-' + sledOffset + 'px)' });
+    $('#about .sled').css({'webkitTransform': 'translateX(' + sledOffset + 'px) translateY(-' + (sledOffset + 150) + 'px)' });
 
     $(window).resize(function() {
       var sledOffset = $(window).width() - 960 + 340 + 20;
@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
 
     function scrolling() {
       if(isScrolledIntoView($('#about.ready'))) {
-        $('#about .sled').css({'webkitTransform': 'translateX(0px) translateY(0px)' });
+        $('#about .sled').css({'webkitTransform': 'translateX(0px) translateY(-150px)' });
         $('#about').removeClass('ready');
       }
     }

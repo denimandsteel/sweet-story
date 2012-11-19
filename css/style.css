@@ -18,14 +18,15 @@ h1, h2, h3, h4, h5, h6 { font-family: 'DidotDisplayDemi'; }
 
 header { position: relative; }
 header h1 {
-	color: #E46964;
+	color: #bf302f;
 	text-shadow: 1px 1px 5px #fff;
-	font-size: 130px;
+	font-size: 125px;
 	line-height: 135px;
 	margin-top: 40px;
 	padding-top: 80px;
 }
 header h3 {
+  color: #5e090a;
 	text-shadow: 1px 1px 5px #fff;
 	position: absolute;
 	bottom: -16px;
@@ -65,17 +66,16 @@ header h3 {
 
 #intro,
 #describe,
-#about,
 #who { margin-top: 80px; }
 
 #intro {
 	position: relative;
-	height: 470px;
+	height: 400px;
 }
 #intro .cake-plate {
 	position: absolute;
-	top: 50px;
-	left: 290px;
+	top: 0px;
+	left: 270px;
 	-webkit-animation: floating 10s infinite linear;
 }
 #intro .question {
@@ -83,13 +83,23 @@ header h3 {
 	text-shadow: 0px 0px 10px #fff;
 }
 #intro .question.first {
-	top: 0; left: 0px;
-	width: 300px;
+	top: 0px; left: 73px;
+	width: 200px;
 }
 #intro .question.second {
-	bottom: 0; right: 0px;
+	top: 100px; right: 0px;
 	width: 300px;
-	text-align: right;
+	text-align: center;
+}
+#intro .question.third {
+  top: 360px; left: 300px;
+  text-align: center;
+}
+
+#describe .alpha {
+  position: relative;
+  top: -130px;
+  text-align: center;
 }
 
 #offscreen-elements-wrap {
@@ -127,10 +137,10 @@ footer .app-store { margin-top: 10px; }
 }
 
 .oliver-head {
-	width: 268px;
-	height: 258px;
+	width: 401px;
+	height: 386px;
 	background: url(../images/oliver-head.png) top left no-repeat;
-	background-size: 268px 258px;
+	background-size: 401px 386px;
 
 	position: absolute;
 	top: 0; right: 0;
@@ -140,7 +150,7 @@ footer .app-store { margin-top: 10px; }
 }
 
 .app-store {
-	display: block;
+	display: inline-block;
 	width: 160px;
 	height: 54px;
 	background: url(../images/app-store.png) top left no-repeat;
@@ -163,10 +173,10 @@ footer .app-store { margin-top: 10px; }
 
 .sled {
 	display: block;
-	width: 280px;
-	height: 269px;
+	width: 502px;
+	height: 481px;
 	background: url(../images/sled.png) top left no-repeat;
-	background-size: 280px 269px;
+	background-size: 502px 481px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
 	.sled { background-image: url(../images/sled@2x.png); }
