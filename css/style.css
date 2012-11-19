@@ -162,7 +162,11 @@ header h3 {
 #creative h2,
 #production h2 { margin-top: 40px; }
 
-#creative .alpha { position: relative; text-align: right;}
+#creative .alpha {
+  position: relative;
+  text-align: right;
+  height: 900px;
+}
 #creative .app-store {
   margin-top: 170px;
   margin-right: 100px;
@@ -175,6 +179,7 @@ header h3 {
 
 #production .omega {
   position: relative;
+  height: 881px;
 }
 #production .ice-cream {
   position: absolute;
