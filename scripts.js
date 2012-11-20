@@ -21,6 +21,7 @@ jQuery(document).ready(function($) {
     });
   }
 
+  // Test for conditions while scrolling.
   function scrolling() {
     if(isScrolledIntoView($('#about.ready'))) {
       $('#about .sled').css(prefix('Transform', 'translateX(0px) translateY(0)'));
@@ -29,6 +30,8 @@ jQuery(document).ready(function($) {
       $(window).unbind('touchmove');
     }
   }
+
+  // Add vendor prefixes to a CSS features.
   function prefix(prop, val) {
     var prefixes = ['', 'Moz', 'Webkit', 'O', 'ms'];
     var prefixed = {};
@@ -37,15 +40,18 @@ jQuery(document).ready(function($) {
     }
     return prefixed;
   }
+
+  // Check if element is scrolled into view.
+  // Inspiration and notes: http://stackoverflow.com/a/488073
+  function isScrolledIntoView($elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    //return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    return !(elemTop >= docViewBottom || elemBottom <= docViewTop);
+  }
+
 });
-// http://stackoverflow.com/a/488073
-function isScrolledIntoView($elem) {
-  var docViewTop = $(window).scrollTop();
-  var docViewBottom = docViewTop + $(window).height();
-
-  var elemTop = $elem.offset().top;
-  var elemBottom = elemTop + $elem.height();
-
-  //return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-  return !(elemTop >= docViewBottom || elemBottom <= docViewTop);
-}
