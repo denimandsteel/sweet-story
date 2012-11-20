@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
     }
   }
   function prefix(prop, val) {
-    var prefixes = ['', 'Moz', 'Webkit', 'O', 'ms', 'Khtml'];
+    var prefixes = ['', 'Moz', 'Webkit', 'O', 'ms'];
     var prefixed = {};
     for (var i = 0; i < prefixes.length; i++) {
       prefixed[prefixes[i] + prop] = val;
