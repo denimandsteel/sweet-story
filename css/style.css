@@ -251,7 +251,7 @@ header h3 {
   left: -90px;
 }
 
-#production .alpha .app-store {
+#production .alpha .app-store-wrap {
   text-align: center;
   margin-top: 40px;
 }
@@ -764,4 +764,187 @@ footer .jellybeans.back {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .jellybeans.back { background-image: url(../images/jellybeans-back@2x.png); }
+}
+
+/* Tuck in logo, which bleeds outside 960 to start */
+@media only screen and (max-width: 1140px) {
+  header hgroup {
+    left: 0;
+  }
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) { }
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .container { width: 748px; }
+  header h1 {
+    width: 400px;
+    padding-top: 60px;
+  }
+  header h3 {
+    left: 240px;
+    bottom: 23px;
+  }
+  #intro .cake-plate {
+    left: 160px;
+  }
+  #intro .question {
+    font-size: 35px;
+  }
+  #intro .question.first {
+    left: 10px;
+  }
+  #intro .question.second {
+    top: 40px;
+  }
+  #intro .question.third {
+    left: 200px;
+  }
+  #describe .alpha {
+    top: -65px;
+  }
+  #describe .alpha strong {
+    font-size: 20px;
+  }
+  #about .sled {
+    background-size: 326px 313px; /* 65% of full size */
+    top: 0;
+  }
+  #creative .app-store { margin-right: 5px; }
+  #creative .donut {
+    left: -100px;
+  }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  header {
+    height: 150px;
+  }
+  header h1 {
+    font-size: 80px;
+    padding-top: 0;
+    margin-top: 0px;
+  }
+  header h3 {
+    left: 0;
+  }
+  .oliver-head {
+    background-size: 200px 193px;
+    width: 200px; height: 193px;
+    top: 150px;
+    right: 35px;
+  }
+  #intro { margin-top: 0; }
+  #intro .cake-plate {
+    top: 220px;
+    left: 25px;
+    width: 200px; height: 167px;
+    background-size: 200px 167px;
+  }
+  #intro .question {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  #intro .question.first {
+    top: 15px;
+    left: 35px;
+  }
+  #intro .question.second {
+    top: 260px;
+    right: 15px;
+    text-align: right;
+  }
+  #intro .question.third {
+    left: 0px;
+    top: 450px;
+    width: 100%;
+  }
+  #about .sled {
+    width: 300px; height: 287px;
+    background-size: 300px 287px;
+  }
+  #creative .alpha {
+    text-align: center;
+    height: 640px;
+  }
+  #creative .app-store {
+    margin: 20px auto 0 auto;
+  }
+  #creative .donut {
+    top: 190px;
+    left: -160px;
+  }
+  #describe .alpha {
+    top: 0px;
+  }
+  #describe .alpha .parents { display: inline-block; }
+  #about .sled {
+    top: 20px;
+  }
+  #creative .app-store { margin-right: 5px; }
+  #production .omega { height: 522px; text-align: center; }
+  #production .omega .ice-cream {
+    display: inline-block;
+    position: static; right: auto;
+    margin-top: 40px;
+    background-size: 194px 480px;
+    width: 194px;
+    height: 480px;
+  }
+  footer .jellybeans { top: 40%; }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    body {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    #about .sled {
+      left: 50px;
+    }
+  }
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  body {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  header h1 {
+    font-size: 60px;
+  }
+  header h3 {
+    font-size: 25px;
+    bottom: 5px;
+  }
+  .oliver-head {
+    right: -15px;
+  }
+  #intro .question {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  #intro .question.first {
+    top: 50px;
+    left: 5px;
+  }
+  #intro .question.second {
+    top: 250px;
+    right: 5px;
+  }
+  #intro .question.third {
+    top: 400px;
+  }
+  #intro .cake-plate {
+    left: -25px;
+    top: 180px;
+  }
+  #intro {
+    height: 370px;
+  }
+  #creative h2, #production h2 { margin-top: 20px; margin-bottom: 0px; font-size: 25px; }
 }
