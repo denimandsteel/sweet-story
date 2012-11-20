@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
     $(window).on('touchmove', scrolling);
 
     var sledOffset = $(window).width() - 960 + 340 + 20;
-    $('#about .sled').css(prefix('Transform', 'translateX(' + sledOffset + 'px) translateY(-' + (sledOffset) + 'px)'));
+    $('#about .sled').css(prefix('Transform', 'translateX(' + sledOffset + 'px) translateY(-' + (sledOffset) + 'px)')).removeClass('hide');
 
     $(window).resize(function() {
       var sledOffset = $(window).width() - 960 + 340 + 20;

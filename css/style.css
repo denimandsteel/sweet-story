@@ -157,6 +157,8 @@ header h3 {
   -khtml-transition: -khtml-transform 0.75s linear;
 }
 
+#about .sled.hide { display: none; }
+
 #creative h2,
 #production h2 { margin-top: 40px; }
 
@@ -231,8 +233,33 @@ footer .jellybeans {
   100% { -webkit-transform: translateX(20.0000px) translateY(-0.0000px); }
 }
 
+@-moz-keyframes front {
+  0% { -moz-transform: translateX(20.0000px) translateY(0.0000px); }
+  5% { -moz-transform: translateX(19.0211px) translateY(6.1803px); }
+  10% { -moz-transform: translateX(16.1803px) translateY(11.7557px); }
+  15% { -moz-transform: translateX(11.7557px) translateY(16.1803px); }
+  20% { -moz-transform: translateX(6.1803px) translateY(19.0211px); }
+  25% { -moz-transform: translateX(0.0000px) translateY(20.0000px); }
+  30% { -moz-transform: translateX(-6.1803px) translateY(19.0211px); }
+  35% { -moz-transform: translateX(-11.7557px) translateY(16.1803px); }
+  40% { -moz-transform: translateX(-16.1803px) translateY(11.7557px); }
+  45% { -moz-transform: translateX(-19.0211px) translateY(6.1803px); }
+  50% { -moz-transform: translateX(-20.0000px) translateY(0.0000px); }
+  55% { -moz-transform: translateX(-19.0211px) translateY(-6.1803px); }
+  60% { -moz-transform: translateX(-16.1803px) translateY(-11.7557px); }
+  65% { -moz-transform: translateX(-11.7557px) translateY(-16.1803px); }
+  70% { -moz-transform: translateX(-6.1803px) translateY(-19.0211px); }
+  75% { -moz-transform: translateX(-0.0000px) translateY(-20.0000px); }
+  80% { -moz-transform: translateX(6.1803px) translateY(-19.0211px); }
+  85% { -moz-transform: translateX(11.7557px) translateY(-16.1803px); }
+  90% { -moz-transform: translateX(16.1803px) translateY(-11.7557px); }
+  95% { -moz-transform: translateX(19.0211px) translateY(-6.1803px); }
+  100% { -moz-transform: translateX(20.0000px) translateY(-0.0000px); }
+}
+
 footer .jellybeans.front {
   -webkit-animation: front 8s infinite linear;
+  -moz-animation: front 8s infinite linear;
 }
 
 @-webkit-keyframes mid {
@@ -258,8 +285,32 @@ footer .jellybeans.front {
   95% { -webkit-transform: translateX(-4.6353px) translateY(14.2658px); }
 }
 
+@-moz-keyframes mid {
+  0%, 100% { -moz-transform: translateX(-8.8168px) translateY(12.1353px); }
+  5% { -moz-transform: translateX(-12.1353px) translateY(8.8168px); }
+  10% { -moz-transform: translateX(-14.2658px) translateY(4.6353px); }
+  15% { -moz-transform: translateX(-15.0000px) translateY(0.0000px); }
+  20% { -moz-transform: translateX(-14.2658px) translateY(-4.6353px); }
+  25% { -moz-transform: translateX(-12.1353px) translateY(-8.8168px); }
+  30% { -moz-transform: translateX(-8.8168px) translateY(-12.1353px); }
+  35% { -moz-transform: translateX(-4.6353px) translateY(-14.2658px); }
+  40% { -moz-transform: translateX(-0.0000px) translateY(-15.0000px); }
+  45% { -moz-transform: translateX(4.6353px) translateY(-14.2658px); }
+  50% { -moz-transform: translateX(8.8168px) translateY(-12.1353px); }
+  55% { -moz-transform: translateX(12.1353px) translateY(-8.8168px); }
+  60% { -moz-transform: translateX(14.2658px) translateY(-4.6353px); }
+  65% { -moz-transform: translateX(15.0000px) translateY(-0.0000px); }
+  70% { -moz-transform: translateX(14.2658px) translateY(4.6353px); }
+  75% { -moz-transform: translateX(12.1353px) translateY(8.8168px); }
+  80% { -moz-transform: translateX(8.8168px) translateY(12.1353px); }
+  85% { -moz-transform: translateX(4.6353px) translateY(14.2658px); }
+  90% { -moz-transform: translateX(0.0000px) translateY(15.0000px); }
+  95% { -moz-transform: translateX(-4.6353px) translateY(14.2658px); }
+}
+
 footer .jellybeans.mid {
   -webkit-animation: mid 8s infinite linear;
+  -moz-animation: mid 8s infinite linear;
 }
 
 @-webkit-keyframes back {
@@ -285,9 +336,32 @@ footer .jellybeans.mid {
   95% { -webkit-transform: translateX(-8.0902px) translateY(-5.8779px); }
 }
 
+@-moz-keyframes back {
+  0%, 100%  { -moz-transform: translateX(-5.8779px) translateY(-8.0902px); }
+  5%  { -moz-transform: translateX(-3.0902px) translateY(-9.5106px); }
+  10% { -moz-transform: translateX(-0.0000px) translateY(-10.0000px); }
+  15% { -moz-transform: translateX(3.0902px) translateY(-9.5106px); }
+  20% { -moz-transform: translateX(5.8779px) translateY(-8.0902px); }
+  25% { -moz-transform: translateX(8.0902px) translateY(-5.8779px); }
+  30% { -moz-transform: translateX(9.5106px) translateY(-3.0902px); }
+  35% { -moz-transform: translateX(10.0000px) translateY(-0.0000px); }
+  40% { -moz-transform: translateX(9.5106px) translateY(3.0902px); }
+  45% { -moz-transform: translateX(8.0902px) translateY(5.8779px); }
+  50% { -moz-transform: translateX(5.8779px) translateY(8.0902px); }
+  55% { -moz-transform: translateX(3.0902px) translateY(9.5106px); }
+  60% { -moz-transform: translateX(0.0000px) translateY(10.0000px); }
+  65% { -moz-transform: translateX(-3.0902px) translateY(9.5106px); }
+  70% { -moz-transform: translateX(-5.8779px) translateY(8.0902px); }
+  75% { -moz-transform: translateX(-8.0902px) translateY(5.8779px); }
+  80% { -moz-transform: translateX(-9.5106px) translateY(3.0902px); }
+  85% { -moz-transform: translateX(-10.0000px) translateY(0.0000px); }
+  90% { -moz-transform: translateX(-9.5106px) translateY(-3.0902px); }
+  95% { -moz-transform: translateX(-8.0902px) translateY(-5.8779px); }
+}
 
 footer .jellybeans.back {
   -webkit-animation: back 8s infinite linear;
+  -moz-animation: back 8s infinite linear;
 }
 
 /** Retina images **/
