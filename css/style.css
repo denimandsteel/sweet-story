@@ -472,4 +472,3 @@ footer .jellybeans.back {
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .jellybeans.back { background-image: url(../images/jellybeans-back@2x.png); }
 }
-
