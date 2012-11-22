@@ -22,6 +22,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 { font-family: 'DidotDisplayDemi'; }
 p { font-family: 'DINRoundWeb-Medium'; }
+p.big { font-size: 35px; line-height: 45px; }
 
 @-webkit-keyframes floating {
   0% { -webkit-transform: translateX(20.0000px) translateY(0.0000px); }
@@ -202,6 +203,7 @@ header h3 {
   text-align: center;
 }
 
+#describe { margin-bottom: 80px; }
 #describe .alpha {
   position: relative;
   top: -130px;
@@ -774,7 +776,9 @@ footer .jellybeans.back {
 }
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) { }
+@media only screen and (max-width: 959px) {
+  #describe { margin-bottom: 0px; }
+}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -903,6 +907,7 @@ footer .jellybeans.back {
       font-size: 20px;
       line-height: 28px;
     }
+    p.big { font-size: 30px; line-height: 40px; }
     #about .sled {
       left: 50px;
     }
@@ -914,6 +919,7 @@ footer .jellybeans.back {
     font-size: 16px;
     line-height: 22px;
   }
+  p.big { font-size: 23px; line-height: 30px; }
   header h1 {
     font-size: 60px;
   }
