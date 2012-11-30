@@ -11,17 +11,20 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+  <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
   <link rel="stylesheet" href="css/skeleton/stylesheets/base.css">
   <link rel="stylesheet" href="css/skeleton/stylesheets/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="http://vjs.zencdn.net/c/video.js"></script>
   <script src="scripts.js"></script>
 
   <link rel="shortcut icon" href="images/favicon.ico">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
@@ -52,7 +55,10 @@
       </div>
   		<div id="describe" class="row">
         <div class="columns six alpha">
-          <div class="parents"></div>
+          <video id="sweet-story-video" class="video-js vjs-default-skin" controls preload="auto" width="340" height="198" poster="images/video-thumb.jpg" data-setup="{}">
+            <source src="video/sweetstory.mp4" type='video/mp4'>
+            <source src="video/sweetstory.webm" type='video/webm'>
+          </video>
           <p><a class="app-store" href="#"></a></p>
           <p><strong>Available for the iPad just<br>in time for the holidays<br>at the App Store!</strong></p>
         </div>
