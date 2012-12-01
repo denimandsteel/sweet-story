@@ -914,6 +914,9 @@ footer .jellybeans.back {
     height: 480px;
   }
   footer .jellybeans { top: 40%; }
+  #offscreen-elements-wrap {
+    overflow: visible;
+  }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -944,7 +947,7 @@ footer .jellybeans.back {
     bottom: 5px;
   }
   .oliver-head {
-    right: -15px;
+    right: 0px;
   }
   #intro .question {
     font-size: 20px;

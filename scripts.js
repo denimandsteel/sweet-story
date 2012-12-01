@@ -54,19 +54,11 @@ jQuery(document).ready(function($) {
     return !(elemTop >= docViewBottom || elemBottom <= docViewTop);
   }
 
-  /*
-  $('video').click(function() {
-    $video = $('video');
-
-    if ($video.get(0).paused) {
-      $video.get(0).play();
-      $video.addClass('playing');
-    }
-    else {
-      $video.get(0).pause();
-      $video.removeClass('playing');
-    }
-  });
-  */
+  if (navigator.userAgent.match(/iphone/i) === null) {
+    $('#sweet-story-video').addClass('video-js vjs-default-skin');
+    _V_("sweet-story-video", {}, function() {
+      // Rock and roll.
+    });
+  }
 
 });
