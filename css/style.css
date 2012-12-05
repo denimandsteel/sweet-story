@@ -704,11 +704,11 @@ footer .jellybeans.back {
   display: inline-block;
   width: 230px;
   height: 78px;
-  background: url(../images/app-store.png) top left no-repeat;
+  background: url(../images/app-store-soon.png) top left no-repeat;
   background-size: 230px 78px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
-  .app-store { background-image: url(../images/app-store@2x.png); }
+  .app-store { background-image: url(../images/app-store-soon@2x.png); }
 }
 
 .parents {
