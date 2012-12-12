@@ -7,9 +7,9 @@
 }
 
 @font-face {
-  font-family: DINRoundWeb-Medium;
-  src: url("din/DINRoundWeb-Medium.eot");
-  src: url("din/DINRoundWeb-Medium.woff") format("woff");
+  font-family: 'DINRoundWeb-Medium';
+  src: url('din/DINRoundWeb-Medium.eot');
+  src: url('din/DINRoundWeb-Medium.woff') format('woff');
 }
 
 body {
