@@ -55,7 +55,13 @@ jQuery(document).ready(function($) {
 
   if (navigator.userAgent.match(/iphone/i) === null) {
     $('#sweet-story-video').addClass('video-js vjs-default-skin');
-    _V_("sweet-story-video", {}, function() {
+    if($.browser.msie && parseInt($.browser.version, 10) < 10) {
+      var options = { "techOrder": ["flash","html5"], "controls": true, "autoplay": false, "preload": "none" }
+    }
+    else {
+      var options = { "controls": true, "autoplay": false, "preload": "none" };
+    }
+    _V_("sweet-story-video", options, function() {
       // Rock and roll.
     });
   }
